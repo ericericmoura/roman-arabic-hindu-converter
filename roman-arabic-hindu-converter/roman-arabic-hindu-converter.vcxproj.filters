@@ -18,5 +18,13 @@
     <ClCompile Include="roman-arabic-hindu-converter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NumeralSystemConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NumeralSystemConverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

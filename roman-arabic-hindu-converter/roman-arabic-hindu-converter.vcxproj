@@ -139,7 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="NumeralSystemConverter.cpp" />
     <ClCompile Include="roman-arabic-hindu-converter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NumeralSystemConverter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
