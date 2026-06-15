@@ -23,7 +23,7 @@ int main()
         std::cin >> raw_option;
         option = static_cast<UserOption>(raw_option);
 
-        int output = 0;
+        std::string output = "";
         
         std::string roman;
         std::string hindu_arabic;
@@ -32,13 +32,17 @@ int main()
             case UserOption::ConvertRoman:
                 std::cout << "Enter a roman number: ";
                 std::cin >> roman;
-                output = converter.RomanToHinduArabic(roman);
+                output = std::to_string(converter.RomanToHinduArabic(roman));
                 std::cout << roman << " = ";
                 break;
             case UserOption::ConvertHinduArabic:
+                std::cout << "Enter a hindu-arabic number: ";
+                std::cin >> hindu_arabic;
+                output = converter.HinduArabicToRoman(std::stoi(hindu_arabic));
+                std::cout << hindu_arabic << " = ";
                 break;
         };        
-        if (output != 0)
+        if (!output.empty())
         {
             std::cout << output;
             std::cout << "\nBazinga!";
